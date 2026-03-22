@@ -1,0 +1,204 @@
+@media (max-width: 900px) {
+  /* Profile Page */
+  .profile-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .appointments-section, .profile-aside {
+    width: 100%;
+    min-width: 0;
+  }
+  /* Search Page — stack médico + agenda (container era um único filho do card) */
+  .doctor-list {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+  .doctor-card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.5rem 1rem;
+    background: var(--color-grayscale-0);
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .doctor-card .container.d-flex {
+    flex-direction: column !important;
+    display: flex !important;
+    align-items: stretch !important;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+  }
+  .doctor-info {
+    padding: 0 0 0.5rem 0;
+    min-width: 0;
+    width: 100%;
+  }
+  .doctor-info .address {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    margin: 1rem 0;
+    background: var(--color-primary-0);
+    align-self: stretch;
+  }
+  .doctor-schedule {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .days-nav {
+    gap: 4px;
+    max-width: 100%;
+    min-width: 0;
+    justify-content: space-between;
+  }
+  .days-nav .arrow {
+    flex-shrink: 0;
+    padding: 8px 4px;
+  }
+  .days-list,
+  .days-list-grid {
+    gap: 6px;
+    margin-left: 0;
+    margin-right: 0;
+    flex: 1;
+    min-width: 0;
+    justify-content: space-evenly;
+  }
+  .hours-row {
+    gap: 8px;
+  }
+  .day,
+  .time-slot,
+  .no-slots {
+    width: 56px;
+    min-width: 56px;
+    max-width: 56px;
+  }
+  /* Cabeçalhos de dia com altura mínima alinham colunas quando um vira 2 linhas */
+  .day-name {
+    min-height: 2.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.25;
+    font-size: 13px;
+  }
+  .day-date {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Profile Page */
+  .profile-content {
+    flex-direction: column;
+  }
+  .profile-aside {
+    order: 1;
+  }
+  .appointments-section {
+    order: 2;
+  }
+  .appointments-section > .card:first-child {
+    order: 2;
+  }
+  .appointments-section > .card:last-child {
+    order: 3;
+  }
+  .appointment-card {
+    flex-direction: column !important;
+    display: flex !important;
+    align-items: stretch !important;
+    background: var(--color-grayscale-0);
+  }
+  /* Search Page */
+  .doctor-card {
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--color-grayscale-0);
+  }
+  .container.d-flex {
+    flex-direction: column !important;
+    display: flex !important;
+    align-items: stretch !important;
+  }
+  .doctor-info {
+    text-align: left;
+    align-items: flex-start;
+    padding: 1em 0.5em;
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    margin: 1em 0;
+    align-self: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: var(--color-primary-0);
+  }
+  .doctor-schedule {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* Buttons and Typography */
+  .button {
+    padding: 8px 16px;
+    font-size: 14px;
+    height: 40px;
+  }
+  .button.small {
+    padding: 6px 12px;
+    font-size: 10px;
+    height: 32px;
+  }
+  .button.big {
+    padding: 16px;
+    font-size: 16px;
+    height: 56px;
+  }
+  .h1 {
+    font-size: 21px;
+    line-height: 120%;
+  }
+  .h2 {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .paragraph-regular {
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .paragraph-semibold {
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .small-regular {
+    font-size: 9px;
+    line-height: 150%;
+  }
+  .small-semibold {
+    font-size: 9px;
+    line-height: 150%;
+  }
+  /* Modals */
+  .modal-content{
+    width: 95%;
+    background: var(--color-grayscale-0);
+  }
+} 
